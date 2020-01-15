@@ -10,8 +10,8 @@ Variation 2: the randomly chosen position is forced to be different, i.e. new po
 
 ### Development platform: 
 + Windows 10;
-+Unity Version: 2019.1.14f1;
-+Visual Studio 2017
++ Unity Version: 2019.1.14f1;
++ Visual Studio 2017
 
 ### Target platform:
 WebGL incl. reference resolution 960x600
@@ -42,5 +42,6 @@ None
 + using arrays in scripts
 
 
-Origional Readme by smeerws/ copied by jstreitberger
++ Origional Readme by smeerws / copied by jstreitberger
+
 Copyright by jstreitber:)
