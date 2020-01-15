@@ -4,15 +4,34 @@ using UnityEngine;
 
 public class MoveBall : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
+    [SerializeField] private GameObject[] ballPositions;
+
+    public GameObject Ball;
+
+    int RandomPos;
+    int PosBefore;
+
+    void SatBallRandom() {
+        RandomPos = 0;
+        PosBefore = 4;
     }
 
-    // Update is called once per frame
-    void Update()
+    void Setposition() {
+        Ball.transform.position = ballPositions[RandomPos].transform.position;
+
+    }
+
+    public void getPosBefore()
     {
-        
+        RandomPos = Random.Range(0, 4);
+        if(RandomPos != PosBefore)
+        {
+            PosBefore = RandomPos;
+            Setposition();
+        }
+        else
+        {
+            getPosBefore();
+        }
     }
 }
